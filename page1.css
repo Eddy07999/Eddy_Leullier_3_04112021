@@ -1,0 +1,225 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: roboto , sans-serif;
+	width: 100%;
+}
+header a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+
+header h1{ font-weight: normal;
+	font-family: shrikhand , cursive;
+	font-size: 33px;
+	padding-left: 15px;
+	color: black;
+	background-color: #white;
+	display: flex;
+	justify-content: center;
+	
+
+
+}
+
+#menu_a_la_francaise h1{
+	font-weight: normal;
+	font-family: shrikhand , cursive;
+	font-size: 33px;
+	padding-left: 15px;
+	padding-top: 30px;
+	color: black;
+	background-color: #white;
+}
+header img{
+	position: absolute;
+	width: 100%;
+	height: 250px;
+
+
+}
+header i{
+	position: absolute;
+	font-size: 25px;
+	padding-top: 12px;
+	padding-left: 15px;
+}
+
+#menu_a_la_francaise{
+	position: relative;
+	top: 220px;
+	width: 100%;
+	height: 1300px;
+	
+	background-color: #F2F2F2;
+	border-radius: 30px 30px 0px 0px;
+
+}
+#menu_a_la_francaise article{
+	
+	margin: auto;
+	box-shadow: 6px 6px 6px grey;
+	background-color: white;
+	border-radius: 20px 20px 20px 20px;
+	width: 90%;
+	height: 70px;
+	animation: slide 4s ,move 2s;
+	
+
+
+}
+@keyframes slide{
+	from{opacity: 0 ;}
+	to{opacity: 1  ;}
+}
+@keyframes move{
+	from{transform: translateY(-30px);}
+	to{transform: translateY(0px);}
+}
+#menu_a_la_francaise h2{
+	margin-top: 40px;
+	font-size: 20px;
+	padding-left: 40px;
+	font-weight: normal;
+	color: grey;
+}
+
+#menu_a_la_francaise h3{
+	padding-top: 10px;
+	color: black;
+	font-size: 20px;
+	padding-left: 15px;
+	margin-bottom: 0px;
+}
+#menu_a_la_francaise p{
+	padding-left: 15px;
+	font-weight: normal;
+	color: grey;
+	margin-top: 5px;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+#menu_a_la_francaise #prix_entree_1{
+	position: absolute;
+	padding-left: 78%;
+	top: 195px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_entree_2{
+	position: absolute;
+	padding-left: 78%;
+	top: 285px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_entree_3{
+	position: absolute;
+	padding-left: 78%;
+	top: 375px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_plat_1{
+	position: absolute;
+	padding-left: 78%;
+	top: 530px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_plat_2{
+	position: absolute;
+	padding-left: 78%;
+	top: 620px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_plat_3{
+	position: absolute;
+	padding-left: 78%;
+	top: 710px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_dessert_1{
+	position: absolute;
+	padding-left: 78%;
+	top: 860px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_dessert_2{
+	position: absolute;
+	padding-left: 78%;
+	top: 950px;
+	color: #000;
+	font-weight: bold;
+}
+#menu_a_la_francaise #prix_dessert_3{
+	position: absolute;
+	padding-left: 78%;
+	top: 1040px;
+	color: #000;
+	font-weight: bold;
+}
+#commander{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	background: linear-gradient(#FF79DA, #9356DC) ;
+	color: white;
+	box-shadow: 6px 6px 6px rgb(206, 206, 206);
+	margin-top: 50px;
+	margin-bottom: 80px;
+	font-weight: bold;
+	font-size: 15px;
+	height: 50px;
+	width: 200px;
+	border: none;
+	border-radius: 25px;
+	transition: 1s;
+}
+#commander:hover{
+	filter:  brightness(1.2);
+	box-shadow: 6px 6px 6px grey;
+}
+
+footer {
+	margin-top: 222px;
+	width: 100%;
+	height: 200px;
+	background-color: #0b1616;
+
+
+}
+footer #logo{
+	padding-top: 20px;
+	font-size: 20px;
+	font-family: shrikhand ,cursive;
+	color: white;
+	padding-left: 30px;
+}
+footer i{
+	top: 30px;
+	color: white;
+	padding-left: 20px;
+	padding-right: 10px ;
+}
+article span{
+	display: block;
+	margin-top: 10px;
+
+	color: white;
+	padding-left: 10px;
+
+}
+footer article p{
+	margin-top: 10px;
+	padding-left: 30px;
+	color: white;
+}

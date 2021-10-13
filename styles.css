@@ -30,7 +30,7 @@ h1{ font-weight: normal;
 	position: absolute;
 	padding-top: 20px;
 
-	padding-left: 28%;
+	padding-left: 30%;
 }
 #situation p{
 	display: flex;
@@ -40,7 +40,7 @@ h1{ font-weight: normal;
 }
 #reserver{
 	background-color: #F2F2F2;
-	height: 250px;
+	height: 290px;
 	padding-top: 5px;
 }
 #reserver h2{
@@ -58,7 +58,7 @@ h1{ font-weight: normal;
 	color: grey;
 	justify-content: center;
 	text-align: center;
-	padding-bottom: 50px;
+	padding-bottom: 0px;
 	
 }
 #explorer_restaurant{
@@ -69,7 +69,7 @@ h1{ font-weight: normal;
 	background: linear-gradient(#FF79DA, #9356DC) ;
 	color: white;
 	box-shadow: 6px 6px 6px rgb(206, 206, 206);
-	
+	z-index: 1;
 	font-weight: bold;
 	font-size: 15px;
 	height: 50px;
@@ -77,6 +77,7 @@ h1{ font-weight: normal;
 	border: none;
 	border-radius: 25px;
 	transition: 1s;
+	padding-left: 0px;
 	
 
 }
@@ -92,50 +93,63 @@ h1{ font-weight: normal;
 	position: absolute;
 	color: #9356DC ;
 	padding-left: 20px;
-	padding-top: 20px;
-	font-size: 20px;
+	padding-top: 25px;
+	font-size: 23px;
 	
 }
 #fonctionnement p{
 	position: absolute;
-	padding-left: 26px;
-	padding-top: 12px;
+	padding-left: 28px;
+	padding-top: 16px;
 	z-index: 1;
 	font-size: 12px;
-	color: black;
+	color: white;
 	
 }
-button{
+#fonctionnement button{
+	position: relative;
+	height: 70px;
+	left: 30px;
+	padding-left: 40px;
+	z-index: -1;
 	border: none;
 	border-radius: 20px;
 	box-shadow: 6px 6px 6px rgb(206, 206, 206);
 	width: 80%;
+	font-weight: bold;
+	font-size: 14px;
+	background: #F2F2F2;
 
+	
+
+}
+a:hover{
+	background: #F1DDF4 ;
+}
+nav ul i{
+	color: #9356dc;
+	font-size: 30px;
+}
+ul{
+	list-style: none;
+}
+#grey_icon i{
+	bottom: 25px;
+	left: 5%;
+	margin-right: 30px;
+	color: grey;
+}
+nav li{
+	margin-bottom: 25px;
 }
 
 
-#fonction_1 ,#fonction_2 ,#fonction_3{
-	display: inline-flex;
-	width: 100%;
-	margin-bottom: 20px;
-}
-#fonction_1 i{
-	position: relative;
-	padding-bottom: 20px;
-	padding-right: 10px;
-
-
-}
-#fonction_2 i{
-	position: relative;
-	padding-bottom: 20px;
-}
-#fonction_3 i{
-	position: relative;
-	padding-bottom: 20px;
-}
 #restaurant{
 	background-color: #F2F2F2;
+}
+#restaurant a{
+	text-decoration: none;
+	color: #000;
 }
 
 #restaurant h2{
@@ -143,6 +157,7 @@ button{
 	padding-left: 20px;
 }
 #restaurant article{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin: auto;
@@ -150,7 +165,7 @@ button{
 	border-radius: 20px;
 	box-shadow: 6px 6px 6px grey;
 	background-color: white;
-	
+
 	width: 90%;
 	height: 280px;
 }
@@ -159,37 +174,60 @@ button{
 	height: 200px;
 }
 #restaurant h3{
-	margin-top: 5px;
+	margin-top: 15px;
+	padding-left: 10px;
 	margin-bottom: 0px;
-	
+
 }
 #restaurant p{
 	display: flex;
 	font-weight: 100;
 	color: grey;
+	padding-left: 10px;
 	margin: 0px;
+
+}
+#restaurant i{
+	position: absolute;
+	z-index: 1;
+	color: grey;
+	font-size: 25px;
+	right: 35px;
+	bottom: 35px;
 	
+
+
 }
 footer {
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	background-color: #0b1616;
+
+
 }
 footer #logo{
+	padding-top: 20px;
 	font-size: 20px;
 	font-family: shrikhand ,cursive;
 	color: white;
-	padding-left: 20px;
+	padding-left: 30px;
 }
 footer i{
-
+	top: 30px;
 	color: white;
 	padding-left: 20px;
+	padding-right: 10px ;
 }
-footer span{
+article span{
+	display: block;
+	margin-top: 10px;
+
 	color: white;
 	padding-left: 10px;
+
 }
 footer article p{
+	margin-top: 10px;
+	padding-left: 30px;
 	color: white;
 }
