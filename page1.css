@@ -58,8 +58,9 @@ header i{
 	border-radius: 30px 30px 0px 0px;
 
 }
-.menu_a_la_francaise article{
-	overflow: ;
+.menu_a_la_francaise article {
+	position: relative;
+	overflow: hidden;
 	margin: auto;
 	margin-top: 25px;
 	box-shadow: 6px 6px 6px grey;
@@ -68,16 +69,15 @@ header i{
 	width: 90%;
 	height: 70px;
 	animation: slide 4s ,move 2s;
-	position: relative;
-
-
 
 }
 
 
+
+
 /**************************************************/
 
-.menu_a_la_francaise article::before{
+.menu_a_la_francaise article:before{
 	content: "";
 
 	position: absolute;
@@ -87,26 +87,26 @@ header i{
 	height: 100%;
 	top:0;
 	right: -20%;
-	transition: transform .3s linear;
+	transition: .3s ;
 }
-.menu_a_la_francaise article::after{
+.menu_a_la_francaise article:after{
 	content:url(./images/circle-check-solid-white.svg) ;
-
+	
 	position: absolute;
 	right: -15%;
-	top: 20%;
+	top: 20px;
 	/*z-index: 2;*/
 	width: 10%;
-
-	transition: transform .3s linear;
+	transition: .3s ;
 
 }
 
 
-.menu_a_la_francaise article a:hover::before{
-	transform: translateX(20%);
+
+.menu_a_la_francaise article:hover:before{
+	transform: translateX(-100%);
 }
-.menu_a_la_francaise article a:hover::after{
+.menu_a_la_francaise article:hover:after{
 	transform: translateX(-190%) rotate(1turn);
 }
 
@@ -135,12 +135,14 @@ header i{
 	color: black;
 	font-size: 20px;
 	padding-left: 15px;
+	margin-top: 12px;
 	margin-bottom: 0px;
+
 }
 .menu_a_la_francaise p{
 	padding-left: 15px;
-	font-weight: normal;
-	color: grey;
+	font-weight: 200;
+	color: black;
 	margin-top: 5px;
 	font-size: 15px;
 }
@@ -148,69 +150,19 @@ a{
 	text-decoration: none;
 	cursor: pointer;
 }
-.menu_a_la_francaise #prix_entree_1{
+.menu_a_la_francaise .prix{
 	position: absolute;
 	padding-left: 85%;
-	top: 30px;
+	top: 38px;
 	color: #000;
 	font-weight: bold;
+	transition: .3s;
 }
-.menu_a_la_francaise #prix_entree_2{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
+.menu_a_la_francaise .prix:hover{
+	transform: translateX(-20%);
+
 }
-.menu_a_la_francaise #prix_entree_3{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
-}
-.menu_a_la_francaise #prix_plat_1{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
-}
-.menu_a_la_francaise #prix_plat_2{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
-}
-.menu_a_la_francaise #prix_plat_3{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
-}
-.menu_a_la_francaise #prix_dessert_1{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
-}
-.menu_a_la_francaise #prix_dessert_2{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
-}
-.menu_a_la_francaise #prix_dessert_3{
-	position: absolute;
-	padding-left: 85%;
-	top: 30px;
-	color: #000;
-	font-weight: bold;
-}
+
 #commander{
 	display: flex;
 	align-items: center;
@@ -267,4 +219,17 @@ footer article p{
 	margin-top: 10px;
 	padding-left: 30px;
 	color: white;
+}
+/*********responsive**************/
+
+@media screen and(min-width: 768px){
+	header h1{
+		color: red;
+	}
+	.menu_a_la_francaise article{
+		height: 200px;
+		width: 60%;
+		color: red;
+	}
+
 }
