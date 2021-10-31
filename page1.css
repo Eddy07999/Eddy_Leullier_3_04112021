@@ -1,3 +1,8 @@
+
+
+
+
+
 body{
 	margin: 0;
 	padding: 0;
@@ -17,7 +22,7 @@ header h1{
 	font-size: 33px;
 	padding-left: 15px;
 	color: black;
-	background-color: #white;
+	background-color: white;
 	display: flex;
 	justify-content: center;
 
@@ -32,13 +37,20 @@ header h1{
 	padding-left: 15px;
 	padding-top: 30px;
 	color: black;
-	background-color: #white;
+	background-color: #F2F2F2;
+	z-index: 1;
+	border-radius: 30px 30px 0px 0px;
 }
 header img{
 	position: absolute;
 	width: 100%;
 	height: 250px;
+	z-index: ;
 
+
+}
+header img:nth-of-type(2){
+	display: none;
 
 }
 header i{
@@ -68,10 +80,21 @@ header i{
 	border-radius: 20px 20px 20px 20px;
 	width: 90%;
 	height: 70px;
-	animation: slide 4s ,move 2s;
 
 }
 
+.entree{
+	animation: move 1s linear ,slide 1s linear;
+
+}
+.plat{
+	animation: move 1s .5s linear,slide 1s .5s linear;
+	animation-fill-mode: backwards;
+}
+.dessert{
+	animation: move 1s 1s linear,slide 1s 1s linear;
+	animation-fill-mode: backwards;
+}
 
 
 
@@ -106,7 +129,7 @@ header i{
 .menu_a_la_francaise article:hover:before{
 	transform: translateX(-100%);
 }
-.menu_a_la_francaise article:hover:after{
+.menu_a_la_francaise  article:hover:after{
 	transform: translateX(-190%) rotate(1turn);
 }
 
@@ -135,22 +158,66 @@ header i{
 	color: black;
 	font-size: 20px;
 	padding-left: 15px;
-	margin-top: 12px;
+	margin-top: 10px;
 	margin-bottom: 0px;
 
+}
+article h3 span{
+	display: inline-block;
+	color: black;
+	font-size: 20px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+article:hover h3 span{
+	display: none;
+}
+article h3 span:nth-child(2){
+	display: none;
+	color: black;
+	font-size: 20px;
+	padding-left: 5px;
+	
+}
+article:hover h3 span:nth-child(2){
+	display: inline-block;
 }
 .menu_a_la_francaise p{
 	padding-left: 15px;
 	font-weight: 200;
 	color: black;
-	margin-top: 5px;
+	margin-top: 2px;
 	font-size: 15px;
+}
+
+article p span{
+	display: inline-block;
+	padding-left: 3px;
+	font-weight: 200;
+	color: black;
+	margin-top: 2px;
+	font-size: 15px;
+
+}
+article:hover p span{
+	
+	display: none;
+}
+article p span:nth-child(2){
+	display: none;
+	font-weight: 200;
+	color: black;
+	margin-top: 2px;
+	font-size: 15px;
+}
+article:hover p span:nth-child(2){
+	display: inline-block;
 }
 a{
 	text-decoration: none;
 	cursor: pointer;
 }
-.menu_a_la_francaise .prix{
+.menu_a_la_francaise article .prix {
 	position: absolute;
 	padding-left: 85%;
 	top: 38px;
@@ -158,7 +225,7 @@ a{
 	font-weight: bold;
 	transition: .3s;
 }
-.menu_a_la_francaise .prix:hover{
+.menu_a_la_francaise article:hover .prix{
 	transform: translateX(-20%);
 
 }
@@ -222,14 +289,58 @@ footer article p{
 }
 /*********responsive**************/
 
-@media screen and(min-width: 768px){
-	header h1{
-		color: red;
+
+
+@media screen and (min-width: 768px){
+	header img{
+		height: 300px;
 	}
+	.menu_a_la_francaise{
+		height: 1500px;
+	}
+	
 	.menu_a_la_francaise article{
-		height: 200px;
+		height: 100px;
 		width: 60%;
-		color: red;
+		
 	}
 
+
+}
+@media screen and (min-width: 990px){
+	
+	
+	header h1{
+		font-size: 60px;
+	}
+	header img{
+		position: relative;
+		width: 48%;
+		height: 300px;
+		margin-bottom: -200px;
+		
+
+	}
+	header img:nth-of-type(2) {
+		display: inline-block;
+		position: absolute;
+		right: 0px;
+		
+	}
+	.menu_a_la_francaise {
+		background-color: #F2F2F2;
+		background-image: url(./images/lacoccina.jpg);
+		background-attachment: fixed;
+		height: 1700px;
+	}
+	
+	.menu_a_la_francaise article{
+		height: 120px;
+		width: 50%;
+		background-image: linear-gradient(90deg,#99E2D0,#9356DC);
+		opacity: 0.9
+	}
+	.menu_a_la_francaise article:after{
+		bottom: 50px;
+	}
 }

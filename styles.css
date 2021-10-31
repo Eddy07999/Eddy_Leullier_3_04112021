@@ -370,6 +370,9 @@ footer article p{
 	main{
 		display: flex;
 	}
+	#situation i{
+		padding-left: 40%;
+	}
 	#fonctionnement{
 		width: 30%;
 		justify-content: space-around;
