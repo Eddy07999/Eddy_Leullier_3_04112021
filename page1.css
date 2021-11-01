@@ -45,7 +45,7 @@ header img{
 	position: absolute;
 	width: 100%;
 	height: 250px;
-	z-index: ;
+	
 
 
 }
@@ -83,6 +83,8 @@ header i{
 
 }
 
+/*************ANIMATION****MENU************/
+
 .entree{
 	animation: move 1s linear ,slide 1s linear;
 
@@ -98,7 +100,7 @@ header i{
 
 
 
-/**************************************************/
+/***************ANIMATION*****PLATS******************************/
 
 .menu_a_la_francaise article:before{
 	content: "";
@@ -145,13 +147,38 @@ header i{
 	from{transform: translateY(-30px);}
 	to{transform: translateY(0px);}
 }
+
+
+
+
+
+/***************************************/
 .menu_a_la_francaise h2{
+	
 	margin-top: 40px;
 	font-size: 20px;
 	padding-left: 40px;
 	font-weight: normal;
 	color: grey;
 }
+.menu_a_la_francaise hr{
+	position: absolute;
+	width: 50px;
+	left: 40px;
+	top :140px;
+	background-color: #99E2D0;
+	border: 2px solid;
+	color: #99E2D0;
+}
+.menu_a_la_francaise hr:nth-of-type(2){
+	top: 490px;
+}
+.menu_a_la_francaise hr:nth-of-type(3){
+	top: 840px;
+}
+
+
+
 
 .menu_a_la_francaise h3{
 
@@ -162,6 +189,10 @@ header i{
 	margin-bottom: 0px;
 
 }
+
+/*********TROIS PTIT POINTS***MENU****HOVER****************/
+
+
 article h3 span{
 	display: inline-block;
 	color: black;
@@ -217,6 +248,9 @@ a{
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/***************PRIX**HOVER*************/
+
 .menu_a_la_francaise article .prix {
 	position: absolute;
 	padding-left: 85%;
@@ -229,6 +263,8 @@ a{
 	transform: translateX(-20%);
 
 }
+
+/************************************/
 
 #commander{
 	display: flex;
@@ -287,6 +323,9 @@ footer article p{
 	padding-left: 30px;
 	color: white;
 }
+
+
+
 /*********responsive**************/
 
 
@@ -303,6 +342,16 @@ footer article p{
 		height: 100px;
 		width: 60%;
 		
+	}
+	.menu_a_la_francaise hr{
+		border: 4px solid;
+	}
+	.menu_a_la_francaise hr:nth-of-type(2){
+		top: 580px;
+
+	}
+	.menu_a_la_francaise hr:nth-of-type(3){
+		top: 1020px;
 	}
 
 
@@ -332,6 +381,16 @@ footer article p{
 		background-image: url(./images/lacoccina.jpg);
 		background-attachment: fixed;
 		height: 1700px;
+	}
+	.menu_a_la_francaise hr{
+		border: 4px solid;
+	}
+	.menu_a_la_francaise hr:nth-of-type(2){
+		top: 640px;
+
+	}
+	.menu_a_la_francaise hr:nth-of-type(3){
+		top: 1140px;
 	}
 	
 	.menu_a_la_francaise article{
