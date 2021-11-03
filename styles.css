@@ -257,6 +257,9 @@ ul{
 	margin-right: 30px;
 	color: grey;
 }
+#fonctionnement button:hover .grey_icon{
+	color: #9356DC;
+}
 nav li{
 	margin-bottom: 25px;
 }
@@ -432,4 +435,9 @@ footer article p{
 		right: 25px;
 	}
 
+}
+@media screen and (min-width: 990px){
+	#fonctionnement .grey_icon{
+		left: 5%;
+	}
 }
